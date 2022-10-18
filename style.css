@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.block4_wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.block4_heading{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 300;
+    line-height: 1.1;
+	width: 600px;
+	height: 268px;
+}
+
+h2::after {
+	transform: translateX(50%);
+	border-color: rgba(184,157,79,1);
+	content: '';
+	display: block;
+	width: 100%;
+	position: relative;
+	border-left: 1px solid currentColor;
+	height: 3em;
+	max-height: 7rem;
+	margin-top: 1rem;
+	box-sizing: inherit;
+}
+
+.block4_flex{
+	flex-direction: column;
+	flex-direction: row;
+	display: flex;
+}
+
+.block4_column{
+	display: flex;
+}
