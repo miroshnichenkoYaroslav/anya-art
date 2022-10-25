@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+ }
+
+.block4 {
+	margin: 0px 32.5px;
+	padding: 0px 0px 72px;
+}
 
 .block4_wrapper{
 	display: flex;
@@ -128,6 +139,12 @@ box-sizing: inherit;
 display: block;
 }
 
+.block5 {
+	transition: opacity .5s ease;
+	background-color: #f5f5f5 !important;
+	padding-top: 4.5rem;
+	padding-bottom: 4.5rem;
+}
 
 .block5_wrapper {
 	display: flex;
@@ -162,7 +179,6 @@ display: block;
 	position: relative;
 	animation: fadein 1s;
 	box-sizing: border-box;
-	text-align: -webkit-match-parent;
 	color: inherit;
 }
 
@@ -210,7 +226,7 @@ span::after {
 	position: relative;
 	animation: fadein 1s;
 	box-sizing: border-box;
-	text-align: -webkit-match-parent;
+
 	color: inherit;
 }
 
@@ -229,6 +245,91 @@ span::after {
 	position: relative;
 	animation: fadein 1s;
 	box-sizing: border-box;
-	text-align: -webkit-match-parent;
 	color: inherit;
+}
+
+.block5_button {
+	border-color: rgba(184,157,79,1);
+	background-color: #b89e4f;
+	padding: 8px 60px 8px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.1rem;
+	line-height: 1.7;
+	margin: 2px 1px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: 'Poppins';
+	font-weight: normal;
+	text-transform: uppercase;
+	background-color: transparent; 
+	color: rgba(184,157,79,1); 
+	border: 1px solid rgba(184,157,79,1);
+}
+
+.block5_fa-long-arrow-right::before{
+	content: "\f178";
+}
+
+.block5_button:hover {
+	background-color:  rgba(184,157,79,1);
+	color: white;
+}
+
+.block6_h1 {
+	font-family: 'Playfair Display';
+	font-weight: normal;
+	font-size: 3.09375rem;
+	letter-spacing: -0.05em;
+	text-align: left;
+}
+
+.block6_lead {
+	font-family: 'Droid Serif',serif;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0px 0px 32px;
+	line-height: 1.75;
+	box-sizing: inherit;
+	text-align: left;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.block6_image1 {
+	height: auto;
+	max-width: 100%;
+	vertical-align: top;
+	border-style: none;
+	box-sizing: inherit;
+	width: 1000px;
+	aspect-ratio: auto 1000 / 1000;
+	text-align: left
+}
+
+.block6_pumawrp {
+	text-align: left;
+	margin-right: 35%;
+	margin-bottom: 35px;
+	box-sizing: inherit;
+	display: block;
+}
+
+.block6_image2 {
+	height: auto;
+    max-width: 100%;
+    vertical-align: top;
+	 border-style: none;
+    box-sizing: inherit;
+	 width: 1000px;
+    aspect-ratio: auto 1000 / 1000;
+	 text-align: left;
+}
+
+.block6_elephantwrp {
+
 }
