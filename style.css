@@ -26,11 +26,11 @@
 .block4_heading{
 	font-family: 'Playfair Display', serif;
 	text-align: center;
-	font-size: 4rem;
+	font-size: 5rem;
 	font-weight: 300;
-    line-height: 1.1;
-	width: 600px;
-	height: 268px;
+   line-height: 1.1;
+	width: 700px;
+	height: 350px;
 }
 
 h2::after {
@@ -165,12 +165,10 @@ box-sizing: inherit;
 	position: relative;
 	left: 0px;
 	box-sizing: border-box;
-	padding-left: 0px;
-	padding-right: 0px;
-	/* transition: opacity .5s ease; */
 	background-color: #f5f5f5 ;
 	padding-top: 6rem;
 	padding-bottom: 6rem;
+	padding: 100px;
 }
 /* 
 .block5_container{
@@ -234,17 +232,16 @@ box-sizing: inherit;
 
 .block5_li1 {
 	display: flex;
+	flex-direction: row;
+	margin-top: 8rem;
 	min-height: 18rem;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: stretch;
 	align-content: stretch;
 	list-style: none;
-	margin: inherit;
 	padding: inherit;
-	display: flex;
 	position: relative;
 	animation: fadein 1s;
 	box-sizing: border-box;
@@ -253,8 +250,8 @@ box-sizing: inherit;
 
 .block5_image1{
 	background-image: url(https://demo.curlythemes.com/art-gallery-wp/wp-content/uploads/sites/24/2017/09/The_High_Meadow_by_Elizabeth_Nourse_Cincinnati_Art_Museum.jpg);
-	width: 26rem;
-	height: 30rem;
+	width: 28rem;
+	height: 26rem;
 	padding-top: 0;
 	max-width: 100%;
 	display: block;
@@ -284,6 +281,11 @@ box-sizing: inherit;
 	width: calc(100% - 40px);
 }
 
+.block5_date{
+	font-family: 'Poppins';
+	text-transform: uppercase;
+}
+
 .block5_p{
 	padding: 4% 10% 4% 8%;
 }
@@ -311,28 +313,26 @@ span::after {
 }
 
 .block5_li2 {
-	min-height: 18rem;
+	margin-top: 8rem;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	flex-direction: row;
-	flex-wrap: wrap;
 	align-items: stretch;
 	align-content: stretch;
 	list-style: none;
-	margin: inherit;
 	padding: inherit;
 	display: flex;
+	flex-direction: row-reverse;
 	position: relative;
 	animation: fadein 1s;
 	box-sizing: border-box;
-
 	color: inherit;
 }
 
 .block5_image2{
 	background-image: url(https://demo.curlythemes.com/art-gallery-wp/wp-content/uploads/sites/24/2017/09/girlbytheriver-1.jpg);
-	width: 26rem;
-	height: 30rem;
+	width: 28rem;
+	height: 26rem;
 	max-width: 100%;
 	display: block;
 	background-size: cover;
@@ -340,25 +340,42 @@ span::after {
 	margin: 0;
 	flex-shrink: 0;
 	align-self: stretch;
+	cursor: pointer;
 	box-shadow: 1.25rem 1.375rem 4.75rem 0 rgba(0,0,0,.42)!important;
 }
 
 .block5_li3 {
+	margin-top: 8rem;
 	min-height: 18rem;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	flex-direction: row;
-	flex-wrap: wrap;
 	align-items: stretch;
 	align-content: stretch;
 	list-style: none;
-	margin: inherit;
 	padding: inherit;
 	display: flex;
 	position: relative;
 	animation: fadein 1s;
 	box-sizing: border-box;
 	color: inherit;
+}
+
+.block5_image3{
+	background-image: url(https://demo.curlythemes.com/art-gallery-wp/wp-content/uploads/sites/24/2017/09/Paintingpoppieswithtexture.jpg);
+	max-width: 100%;
+	width: 28rem;
+	height: 26rem;
+	display: block;
+	background-size: cover;
+	background-position: center center;
+	margin: 0;
+	flex-shrink: 0;
+	-webkit-align-self: stretch;
+	align-self: stretch;
+	box-shadow: 1.25rem 1.375rem 4.75rem 0 rgba(0,0,0,.42);
+	cursor: pointer;
+	box-sizing: border-box;
 }
 
 .block5_button {
@@ -388,6 +405,10 @@ span::after {
 .block5_button:hover {
 	background-color:  rgba(184,157,79,1);
 	color: white;
+}
+
+.block6{
+	display: flex;
 }
 
 .block6_h1 {
@@ -421,6 +442,7 @@ span::after {
 	padding-left: 0;
 	padding-right: 0;
 	text-decoration: none;
+	touch-action: manipulation;
 }
 
 .block6_image1 {
@@ -463,7 +485,7 @@ span::after {
 .h1_block6 {
 	text-align: center;
 	font-family: 'Playfair Display';
-	font-size: 64px;
+	font-size: 80px;
 	font-weight: 300;
 	line-height: 1.1;
 }
@@ -481,18 +503,21 @@ span::after {
 
 .cardwrp {
 	position: relative;
-	height: 267.104px;
+	height: 25rem;
 	margin-right: 30px;
 	box-sizing: inherit;
 }
 
 .card_block6 {
-	width: 150px;
-	height: 200px;
+	width: 270px;
+	height: 320px;
 	background-color: #333;
 	outline-offset: -8px;
 	position: relative;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .card-image {
@@ -508,10 +533,11 @@ span::after {
 .text-card {
 	color: #f5f5f5;
 	font-family: 'Poppins';
-	font-weight: 100;
-	padding: 29px;
-	line-height: 1.5;
 	text-align: center;
+	font-weight: 100;
+	font-size: 25px;
+	padding: 70px;
+	line-height: 1.5;
 }
 
 .card_block6:hover .card-image {
@@ -546,4 +572,8 @@ span::after {
 .block6_button:hover {
 	background-color:  rgba(184,157,79,1);
 	color: white;
+}
+
+.emptyspace{
+	min-height: 4.5rem;
 }
